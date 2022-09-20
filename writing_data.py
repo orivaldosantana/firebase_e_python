@@ -1,12 +1,6 @@
 from firebase_init import db 
 import json 
 
-doc_ref = db.collection(u'users').document(u'alovelace')  
-doc_ref.set({
-    u'first': u'Adaa3',
-    u'last': u'Lovelace',
-    u'born': 1815
-})
 
 with open('./dados/json_turmas.json', 'r') as classes_file:
   classes_data = json.load(classes_file) 
